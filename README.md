@@ -1,6 +1,6 @@
 Bootstrap book editing like this: 
 
 ```shell
-mkdir book && cd book 
+mkdir reactive-spring-book && cd  reactive-spring-book
 curl https://raw.githubusercontent.com/reactive-spring-book/__init__/master/start.sh  | bash 
 ```
