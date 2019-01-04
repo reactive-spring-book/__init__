@@ -4,7 +4,7 @@ start=$( cd `dirname $0` && pwd	 )
 echo "initializing from ${start} "
 curl https://raw.githubusercontent.com/reactive-spring-book/publication/master/repositories.txt | while read l ; do
  
- d=$( echo $l |  cut -f5 -d\/ | cut -f1 -d. ) 
+ d=$( echo $l |  cut -f4 -d\/ | cut -f2 -d. ) 
  echo "Processing $d"  
  dir_to_create=${start}/$d
  
