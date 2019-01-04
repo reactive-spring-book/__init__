@@ -12,7 +12,8 @@ curl https://raw.githubusercontent.com/reactive-spring-book/publication/master/r
  	echo "WARN: ${dir_to_create} aleady exists." # if you want this to be freshly initialized then check in your work and delete the directory 
  else  	
  	echo "initializing ${dir_to_create}"  
- 	git clone ${l} ${dir_to_create}
+ 	git_repo=https://github.com/reactive-spring-book/${d}.git
+ 	git clone ${git_repo} ${dir_to_create}
  fi
 done 
 
