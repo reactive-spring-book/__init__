@@ -2,7 +2,7 @@
 
 start=$( cd `dirname $0` && pwd	 )
 echo "initializing from ${start} "
-curl https://raw.githubusercontent.com/reactive-spring-book/publication/master/ci/repositories.txt | while read l ; do
+curl https://raw.githubusercontent.com/reactive-spring-book/__init__/main/repositories.txt | while read l ; do
  
  d=$(  echo $l | cut -f5 -d\/ | cut -f1 -d\.  ) 
  echo "Processing $d"  
